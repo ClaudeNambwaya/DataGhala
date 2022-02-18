@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row mb-3">
+    <div class="col col-sm-12">
+        <h2>Company</h2>
+    </div>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">MemberID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @*@foreach (var members in Model.Members)
+        {*@
+            <tr>
+                <td>
+                    MemberID
+                </td>
+                <td>
+                    Name
+                </td>
+                <td>
+                    Email
+                </td>
+                <td>
+                    Contact
+                </td>
+                <td>
+                    <button data-href="#" type="button" class="data-btn btn btn-secondary" data-toggle="modal" data-target="#actionModal">View</button>
+                    <button data-href="#" type="button" class="data-btn btn btn-success" data-toggle="modal" data-target="#actionModal">Edit</button>
+                    <button data-href="#" type="button" class="data-btn btn btn-danger" data-toggle="modal" data-target="#actionModal">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
